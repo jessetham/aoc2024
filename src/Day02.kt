@@ -1,10 +1,10 @@
 fun main() {
-    val testInput = readInput("Day02_test")
+    val testInput = readInputAsLines("Day02_test")
     val testParsed = parse(testInput)
     check(part1(testParsed) == 2)
     check(part2(testParsed) == 4)
 
-    val input = readInput("Day02")
+    val input = readInputAsLines("Day02")
     val parsed = parse(input)
     part1(parsed).println()
     part2(parsed).println()

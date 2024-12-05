@@ -1,12 +1,12 @@
 import kotlin.math.sign
 
 fun main() {
-    val testInput = readInput("Day04_test")
+    val testInput = readInputAsLines("Day04_test")
     val testParsed = parse(testInput)
     check(part1(testParsed) == 18)
     check(part2(testParsed) == 9)
 
-    val input = readInput("Day04")
+    val input = readInputAsLines("Day04")
     val parsed = parse(input)
     part1(parsed).println()
     part2(parsed).println()

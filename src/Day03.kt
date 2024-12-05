@@ -1,9 +1,9 @@
 fun main() {
-    val testInput = readInput("Day03_test").first()
+    val testInput = readInputAsLines("Day03_test").first()
     check(part1(testInput) == 161)
     check(part2(testInput) == 48)
 
-    val input = readInput("Day03").joinToString(separator = "")
+    val input = readInputAsLines("Day03").joinToString(separator = "")
     part1(input).println()
     part2(input).println()
 }
