@@ -48,8 +48,4 @@ private object Day13 {
             }
         }
     }
-
-    data class Vec2(val x: Long, val y: Long) {
-        operator fun plus(other: Vec2) = Vec2(x = x + other.x, y = y + other.y)
-    }
 }
