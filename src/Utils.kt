@@ -22,5 +22,7 @@ fun String.md5() = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteA
 fun Any?.println() = println(this)
 
 data class Vec2(val x: Long, val y: Long) {
+    val indices = x.toInt() to y.toInt()
+
     operator fun plus(other: Vec2) = Vec2(x = x + other.x, y = y + other.y)
 }
